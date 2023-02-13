@@ -5,4 +5,38 @@
     padding: 0;
 }
 
-.wrapper .strobe:
+.wrapper
+{
+    display: flex;
+}
+
+.wrapper .strobe
+{
+    width: 20%;
+    height: 100vh;
+}
+
+.wrapper .strobe:hover
+{
+   animation-name: colorchange;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.wrapper .strobe:nth-child(n+2)
+{
+    border-left: 5px solid lime;
+}
+
+@keyframes colorchange
+{
+    from
+    {
+        background-color: antiquewhite;
+    }
+    to
+    {
+        background-color: yellow;
+    }
+}
